@@ -16,6 +16,8 @@ Note that many of these solutions take up far more space than the 100MB limit in
 
 The code for the sparse sector grid solvers is mainly contained in `sparse_solvers.py`. The script `sparse_test.py` shows how to run the solver and generate the figures from the paper. The script `num_grid_points.py` prints out the number of grid points used by the sparse solver, compared to what the dense solver would use. The file `plots.py` contains plotting functionality used by many scripts. 
 
+The folder `meshes` contains the sparse sector meshes for many different dimensions and grid resolutions, since they are computationally intensive to compute. The folder `sparse_solutions` contains many sparse solutions as well as the stencils for computing directional second derivatives, since they are very computationally intensive to compute. All stored files are automatically loaded by the code when available. 
+
 As before, there are many sparse solutions that take up to 10GB to store and cannot be included in the repository. See the `.gitignore` file for a list of additional files that are available upon request.
 
 Any questions should be sent to Jeff Calder (`jwcalder@umn.edu`).
