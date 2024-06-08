@@ -12,4 +12,4 @@ for i in range(len(D)):
     fname = 'sparse_solutions/sol_%.2f_%d_%.5f.npy'%(T,d,dx)
     u = np.load(fname)
     m = len(u)
-    print('%d,%.3f,%.0E,%.0E'%(d,dx,m,(T/dx)**d))
+    print('%d,%.3f,%.0E,%.0E'%(d,dx,m,(2*T/dx)**d))
